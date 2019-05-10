@@ -45,11 +45,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-
-
-
-
+        <nav className="nav-bar">
+          <NavLink to='/'>VILLAGE</NavLink>
+          <NavLink to='/smurfform'> Add Smurf</NavLink>
+        </nav>
 
         <Route
         path='/smurfform'
@@ -61,7 +60,7 @@ class App extends Component {
         />
 
         <Route
-        path='/'
+        exact path='/'
         render={ props => (
           <Smurfs {...props}
           smurfs={this.state.smurfs}

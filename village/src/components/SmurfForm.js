@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import "./SmurfStyle.css";
 
 class SmurfForm extends Component {
   constructor(props) {
@@ -26,25 +26,6 @@ class SmurfForm extends Component {
   handleInputChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-
-  // addSmurf = event => {
-  //   axios
-  //   .post("http://localhost:3333/smurfs", {
-  //     name: this.state.name,
-  //     age: this.state.age,
-  //     height: this.state.height
-  //   })
-  //   .then(res => {
-  //     console.log(res);
-  //     this.setState({
-  //       smurfs: res.data
-  //     })
-  //   })
-  //   .catch(err => {
-  //     console.log(err);
-  //   })
-  // };
-
 
 
   render() {
